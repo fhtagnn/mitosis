@@ -2,7 +2,7 @@
 #define COMPILE_RIGHT
 //#define COMPILE_LEFT
 
-#include "mitosis.h"
+#include "kissboard.h"
 #include "nrf_drv_config.h"
 #include "nrf_gzll.h"
 #include "nrf_gpio.h"
@@ -62,8 +62,6 @@ static void gpio_config(void)
     nrf_gpio_cfg_sense_input(S19, NRF_GPIO_PIN_PULLUP, NRF_GPIO_PIN_SENSE_LOW);
     nrf_gpio_cfg_sense_input(S20, NRF_GPIO_PIN_PULLUP, NRF_GPIO_PIN_SENSE_LOW);
     nrf_gpio_cfg_sense_input(S21, NRF_GPIO_PIN_PULLUP, NRF_GPIO_PIN_SENSE_LOW);
-    nrf_gpio_cfg_sense_input(S22, NRF_GPIO_PIN_PULLUP, NRF_GPIO_PIN_SENSE_LOW);
-    nrf_gpio_cfg_sense_input(S23, NRF_GPIO_PIN_PULLUP, NRF_GPIO_PIN_SENSE_LOW);
 }
 
 // Return the key states, masked with valid key pins
@@ -98,8 +96,8 @@ static void send_data(void)
                       ((keys & 1<<S19) ? 1:0) << 5 | \
                       ((keys & 1<<S20) ? 1:0) << 4 | \
                       ((keys & 1<<S21) ? 1:0) << 3 | \
-                      ((keys & 1<<S22) ? 1:0) << 2 | \
-                      ((keys & 1<<S23) ? 1:0) << 1 | \
+                      0 << 2 | \
+                      0 << 1 | \
                       0 << 0;
 
     nrf_gzll_add_packet_to_tx_fifo(PIPE_NUMBER, data_payload, TX_PAYLOAD_LENGTH);

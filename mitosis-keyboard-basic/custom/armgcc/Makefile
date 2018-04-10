@@ -1,4 +1,4 @@
-PROJECT_NAME := mitosis-keyboard-basic
+PROJECT_NAME := kissboard-keyboard-basic
 
 export OUTPUT_FILENAME
 #MAKEFILE_NAME := $(CURDIR)/$(word $(words $(MAKEFILE_LIST)),$(MAKEFILE_LIST))
