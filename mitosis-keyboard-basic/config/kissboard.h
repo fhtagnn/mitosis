@@ -8,27 +8,27 @@
 
 // left hand pins
 
-#define L_S01 29
-#define L_S02 30
-#define L_S03 35
-#define L_S04 34
-#define L_S05 33
-#define L_S06 22
-#define L_S07 23
-#define L_S08 28
-#define L_S09 27
-#define L_S10 24
-#define L_S11 13
-#define L_S12 14
-#define L_S13 21
-#define L_S14 19
-#define L_S15 15
-#define L_S16 7
-#define L_S17 6
-#define L_S18 5
-#define L_S19 4
-#define L_S20 3
-#define L_S21 2
+#define L_S01 15
+#define L_S02 16
+#define L_S03 19
+#define L_S04 18
+#define L_S05 17
+#define L_S06 8
+#define L_S07 9
+#define L_S08 14
+#define L_S09 13
+#define L_S10 10
+#define L_S11 30
+#define L_S12 0
+#define L_S13 7
+#define L_S14 5
+#define L_S15 1
+#define L_S16 28
+#define L_S17 25
+#define L_S18 24
+#define L_S19 23
+#define L_S20 22
+#define L_S21 21
 
 #define L_MASK (1<<L_S01 | \
  				1<<L_S02 | \
@@ -54,27 +54,27 @@
 
 // right hand pins
 
-#define R_S01 6
-#define R_S02 5
-#define R_S03 2
-#define R_S04 3
-#define R_S05 4
-#define R_S06 15
-#define R_S07 14
-#define R_S08 9
-#define R_S09 10
-#define R_S10 13
-#define R_S11 24
-#define R_S12 23
-#define R_S13 16
-#define R_S14 18
-#define R_S15 22
-#define R_S16 28
-#define R_S17 29
-#define R_S18 30
-#define R_S19 33
-#define R_S20 34
-#define R_S21 35
+#define R_S01 25
+#define R_S02 24
+#define R_S03 21
+#define R_S04 22
+#define R_S05 23
+#define R_S06 1
+#define R_S07 0
+#define R_S08 28
+#define R_S09 29
+#define R_S10 30
+#define R_S11 10
+#define R_S12 9
+#define R_S13 2
+#define R_S14 4
+#define R_S15 8
+#define R_S16 14
+#define R_S17 15
+#define R_S18 16
+#define R_S19 17
+#define R_S20 18
+#define R_S21 19
 
 #define R_MASK (1<<R_S01 | \
  				1<<R_S02 | \
